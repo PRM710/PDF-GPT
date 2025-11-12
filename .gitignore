@@ -1,0 +1,78 @@
+# ==========================
+# Global
+# ==========================
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.*
+
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+venv/
+venv*/
+.env/
+.mypy_cache/
+.pytest_cache/
+.coverage
+*.egg-info/
+*.egg
+dist/
+build/
+
+# FastAPI / Backend specific
+backend/app/__pycache__/
+backend/app/*.pyc
+backend/.pytest_cache/
+backend/.mypy_cache/
+
+# ==========================
+# Node / Frontend
+# ==========================
+frontend-new/node_modules/
+frontend-new/.eslintcache
+frontend-new/dist/
+frontend-new/.vite/
+frontend-new/.env
+frontend-new/.env.*
+
+# Vite / React
+*.tsbuildinfo
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+coverage/
+.cache/
+
+# ==========================
+# Misc
+# ==========================
+# Backup or temp files
+*.bak
+*.old
+*.orig
+*.rej
+*.save
+*.tmp
+*~
+
+# Ignore uploaded or generated files if any
+uploads/
+media/
+output/

@@ -1,0 +1,145 @@
+.pdf-upload {
+  padding: 0;
+}
+
+.upload-header {
+  margin-bottom: 16px;
+}
+
+.upload-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #acacbe;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.upload-area {
+  border: 2px dashed #565869;
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: rgba(86, 88, 105, 0.1);
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.upload-area:hover {
+  border-color: #8e8ea0;
+  background-color: rgba(86, 88, 105, 0.2);
+}
+
+.upload-area.drag-over {
+  border-color: #10a37f;
+  background-color: rgba(16, 163, 127, 0.1);
+}
+
+.upload-area.uploading {
+  border-color: #10a37f;
+  background-color: rgba(16, 163, 127, 0.05);
+}
+
+.upload-area input {
+  display: none;
+}
+
+.upload-label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.upload-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.upload-icon {
+  color: #8e8ea0;
+  transition: color 0.2s;
+}
+
+.upload-area:hover .upload-icon {
+  color: #acacbe;
+}
+
+.upload-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.upload-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.upload-subtitle {
+  font-size: 14px;
+  color: #8e8ea0;
+}
+
+.upload-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #4a4a4a;
+  border-top: 3px solid #10a37f;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.upload-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: rgba(86, 88, 105, 0.2);
+  border-radius: 6px;
+  font-size: 13px;
+  color: #acacbe;
+}
+
+.feature-icon {
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .upload-area {
+    padding: 24px 16px;
+  }
+
+  .upload-label {
+    gap: 12px;
+  }
+
+  .upload-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .upload-title {
+    font-size: 14px;
+  }
+
+  .upload-subtitle {
+    font-size: 13px;
+  }
+}
