@@ -3,7 +3,7 @@ import PDFUpload from './components/PDFUpload';
 import PDFList from './components/PDFList';
 import ChatInterface from './components/ChatInterface';
 import { getPDFs } from './utils/api';
-import './App.css';
+import './app.css';
 
 function App() {
   const [pdfs, setPdfs] = useState([]);
